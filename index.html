@@ -545,7 +545,7 @@
 
         .memory-card.expanded .card-message {
             opacity: 1;
-            max-height: 200px;
+            max-height: 300px;
             margin-top: 15px;
         }
 
@@ -866,6 +866,26 @@
 
             .cards-grid {
                 grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .memory-card {
+                padding: 25px 20px;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
+
+            .card-message {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .memory-card.expanded .card-message {
+                max-height: 400px;
             }
 
             .final-letter {
